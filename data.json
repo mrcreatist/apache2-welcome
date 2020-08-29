@@ -1,0 +1,11 @@
+{
+  "name": "Your/machine name",
+  "heading": "Welcome to",
+  "domain": "http://192.168.1.201",
+  "projects": [
+    {
+      "name": "Sample Project",
+      "url": "/sample"
+    }
+  ]
+}
