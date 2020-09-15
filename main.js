@@ -6,7 +6,7 @@ fetch('./data.json').then(r => r.json()).then(data => {
     // projects
     data.projects.forEach(p => {
         const item = document.createElement('a');
-        item.setAttribute('href', `${data.domain + p.url}`);
+        item.setAttribute('href', `${data.domain + (p.port ? `:${p.port}` : '') + (p.url ? `${p.url}` : '')}`);
         item.text = p.name;
         document.getElementById('project').appendChild(item);
     });
